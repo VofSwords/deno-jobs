@@ -1,0 +1,16 @@
+type Company {
+  name: String!
+  verified: Boolean!
+  trusted: Boolean!
+  vacancies: [Vacancy!]! @relation
+}
+
+type Vacancy {
+  title: String!
+  externalUrl: String!
+  company: Company!
+}
+
+type Query {
+  getAllVacancies: [Vacancy!]!
+}

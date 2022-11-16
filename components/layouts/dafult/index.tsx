@@ -1,8 +1,8 @@
 import { ComponentChildren } from "preact";
 import FooterBage from "./footerBage.tsx";
-import FreshLogo from "../../icons/fresh.tsx";
-import GithubLogo from "../../icons/github.tsx";
-import VofSwordsLogo from "../../icons/vofswords.tsx";
+import FreshLogo from "$components/icons/fresh.tsx";
+import GithubLogo from "$components/icons/github.tsx";
+import VofSwordsLogo from "$components/icons/vofswords.tsx";
 
 const Layout = ({ children }: { children: ComponentChildren }) => {
   const headerHeight = '60px';

@@ -1,5 +1,8 @@
 {
   "imports": {
+    "$components/": "./components/",
+    "$islands/": "./islands/",
+    "$lib/": "./lib/",
     "$fresh/": "https://deno.land/x/fresh@1.1.1/",
     "preact": "https://esm.sh/preact@10.11.0",
     "preact/": "https://esm.sh/preact@10.11.0/",
