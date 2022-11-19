@@ -36,7 +36,7 @@ const VacancyList = (props: VacancyListProps) => {
     <div class={ wrapperClass }>
       {
         props.vacancies.map(vacancy => (
-          <div class={`w-full h-24 py-2`} key={ vacancy._id }>
+          <div class={`w-full min-h-[6rem] py-2`} key={ vacancy._id }>
             <VacancyItem { ...vacancy } />
           </div>
         ))

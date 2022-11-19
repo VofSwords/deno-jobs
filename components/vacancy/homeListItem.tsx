@@ -22,33 +22,32 @@ const ListItem = (props: Props) => {
       bg-gray(50 hover:100)
       transition-colors duration-75
     `}>
-      <div class={`flex justify-start items-center`}>
+      <div class={`pb-1`}>
         <a 
           class={`
-            pb-1
             text-2xl
             hover:text-blue-600
             cursor-pointer
             transition-colors duration-150
-            flex justify-start items-center
           `}
           href={ props.externalUrl }
           target="_blank"
         >
-          <span class={`pr-1`}>
+          <span>
             { props.title }
           </span>
-          <IconExternalLink class={`w-4 h-4`} />
+          &nbsp;
+          <IconExternalLink class={`w-4 h-4 inline align-baseline`} />
         </a>
       </div>
       <div>
-        <span class={`text-gray-500 flex justify-start items-center`}>
+        <div class={`text-gray-500 flex justify-start items-center`}>
           { props.company.name }
           { props.company.verified ? (
               props.company.trusted ? <IconChecks class={`w-4 h-4`} /> : <IconCheck class={`w-4 h-4`} />
             ) : undefined
           }
-        </span>
+        </div>
       </div>
     </div>
   )
