@@ -17,15 +17,16 @@ query {
     }
   }
 }
-`
+`;
 
-export interface ResponceVacancy extends Omit<Vacancy, 'company'> {
-  company: Omit<Company, 'vacancies'>
+export interface ResponceVacancy extends Omit<Vacancy, "company"> {
+  company: Omit<Company, "vacancies">;
 }
 
-const getAllVacancies = () => Fauna<{ getAllVacancies: { data: ResponceVacancy[] }}>(
+const getAllVacancies = () =>
+  Fauna<{ getAllVacancies: { data: ResponceVacancy[] } }>(
     query,
-    {}
+    {},
   );
 
 export default getAllVacancies;
