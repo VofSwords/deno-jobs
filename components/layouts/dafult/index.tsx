@@ -49,7 +49,7 @@ const Layout = ({ children }: { children: ComponentChildren }) => {
           `}
         >
           <FooterBage
-            className={`px-2 py-1`}
+            class={`px-2 py-1`}
             color="#fbbf24"
             icon={<VofSwordsLogo />}
             href={vofSwordsHref}
@@ -57,7 +57,7 @@ const Layout = ({ children }: { children: ComponentChildren }) => {
             VofSwords
           </FooterBage>
           <FooterBage
-            className={`px-2 py-1`}
+            class={`px-2 py-1`}
             color="#0969da"
             icon={<GithubLogo />}
             href={sourceHref}
@@ -65,7 +65,7 @@ const Layout = ({ children }: { children: ComponentChildren }) => {
             Source
           </FooterBage>
           <FooterBage
-            className={`px-2 py-1`}
+            class={`px-2 py-1`}
             color="#4ade80"
             icon={<FreshLogo />}
             href={freshHref}

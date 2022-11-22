@@ -2,14 +2,14 @@ import { ComponentChildren, VNode } from "preact";
 
 interface FooterBageProps {
   children: ComponentChildren;
-  className: string;
+  class: string;
   color: string;
   href: string;
   icon?: VNode;
 }
 
 const FooterBage = (
-  { children, className, icon, color, href }: FooterBageProps,
+  { children, class: className, icon, color, href }: FooterBageProps,
 ) => {
   const iconElement = icon === undefined
     ? (
