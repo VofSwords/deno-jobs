@@ -16,9 +16,9 @@ const Layout = ({ children }: { children: ComponentChildren }) => {
       >
         <div class={`h-full -mx-8 flex items-center`}>
           <div class={`px-8`}>
-            <span class={`text-xl`}>
+            <a class={`text-xl`} href="/" target="_self">
               Deno Jobs
-            </span>
+            </a>
           </div>
         </div>
       </header>
