@@ -1,5 +1,7 @@
 import { Options } from "$fresh/plugins/twind.ts";
 
 export default {
-  selfURL: import.meta.url,
-} as Options;
+  theme: {
+    extend: {},
+  },
+} as Pick<Options, "theme">;
