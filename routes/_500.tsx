@@ -4,7 +4,7 @@ import { Head } from "$fresh/runtime.ts";
 import { ErrorPageProps } from "$fresh/server.ts";
 import IconAlien from "https://deno.land/x/tabler_icons_tsx@0.0.1/tsx/alien.tsx";
 
-const Home = ({ url }: ErrorPageProps) => {
+const ErrorPage = ({ url }: ErrorPageProps) => {
   return (
     <>
       <Head>
@@ -34,4 +34,4 @@ const Home = ({ url }: ErrorPageProps) => {
   );
 };
 
-export default Home;
+export default ErrorPage;
