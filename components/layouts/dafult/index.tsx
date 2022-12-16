@@ -23,7 +23,7 @@ const Layout = ({ children }: { children: ComponentChildren }) => {
         </div>
       </header>
       <div
-        class={`min-h-screen pt-[${headerHeight}] mb(40 sm:32 md:24 lg:16) bg-white flex items-stretch`}
+        class={`min-h-screen min-h-tVH pt-[${headerHeight}] mb(40 sm:32 md:24 lg:16) bg-white flex items-stretch`}
       >
         <div class={`flex-grow`}>
           {children}
